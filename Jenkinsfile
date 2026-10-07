@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        // Please update your own registry here
+
         GITHUB_CONTAINER_REGISTRY = '<GITHUB_CONTAINER_REGISTRY_URL>'
         DOCKER_IMAGE = "$GITHUB_CONTAINER_REGISTRY/NAMESPACE/exampleJenkins"
         DOCKERFILE_PATH = 'Dockerfile'
